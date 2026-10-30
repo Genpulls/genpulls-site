@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0b0a">
   <title>Generational Pulls | Chasing hits. Building legacy.</title>
   <meta name="description" content="Sealed Pokémon and One Piece TCG for resellers and collectors in Perth, Australia.">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -11,29 +12,152 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner">
-    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Generational Pulls logo"><span>Generational Pulls<small>CHASING HITS. BUILDING LEGACY.</small></span></a>
-    <nav class="nav" aria-label="Main navigation"><a aria-current="page" href="index.html">Home</a><a href="about.html">About</a><a href="what-we-sell.html">What we sell</a><a href="stock.html">In stock</a><a href="ebay.html">eBay</a><a href="contact.html">Contact</a></nav>
-  </div></header>
-  <main>
-    <section class="hero"><div class="container">
-      <div class="eyebrow">Perth / Brabham · Western Australia</div>
-      <h1>Generational Pulls</h1>
-      <p class="slogan">CHASING HITS. BUILDING LEGACY.</p>
-      <p class="lede">Sealed Pokémon &amp; One Piece for resellers and collectors — Perth, Australia.</p>
-      <div class="actions"><a class="button" href="https://ebay.io/m/q7AtVq">Shop on eBay <span aria-hidden="true">↗</span></a><a class="button secondary" href="what-we-sell.html">See what we sell</a></div>
-    </div></section>
-    <div class="trust-strip"><div class="container"><strong>Generational Pulls</strong> · Sole trader · ABN 38 301 484 193 · ASIC-registered business name · Based in Perth / Brabham WA</div></div>
-    <section class="section"><div class="container">
-      <div class="section-heading"><h2>Sealed product, clearly listed.</h2><p>Stock moves — live listings, shipping and buyer protection are on our public eBay storefront.</p></div>
-      <div class="grid cards-3">
-        <article class="card"><span class="number">01</span><h3>Pokémon TCG<br>English sealed</h3><p>Booster boxes, ETBs, UPCs and other sealed English product as allocated.</p></article>
-        <article class="card"><span class="number">02</span><h3>Pokémon TCG<br>Simplified Chinese</h3><p>Sealed Simplified Chinese product when we have it in hand.</p></article>
-        <article class="card"><span class="number">03</span><h3>One Piece TCG<br>sealed</h3><p>Sealed One Piece product for the AU reseller and collector market.</p></article>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Generational Pulls logo"><span>Generational Pulls<small>CHASING HITS. BUILDING LEGACY.</small></span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="what-we-sell.html">What we sell</a>
+        <a href="stock.html">In stock</a>
+        <a href="ebay.html">eBay</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button header-shop" href="https://ebay.io/m/q7AtVq">Shop on eBay <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Perth / Brabham · Western Australia</div>
+        <h1>Generational Pulls</h1>
+        <p class="slogan">CHASING HITS. BUILDING LEGACY.</p>
+        <p class="lede">Sealed Pokémon &amp; One Piece for resellers and collectors — Perth, Australia.</p>
+        <div class="actions">
+          <a class="button" href="https://ebay.io/m/q7AtVq">Shop on eBay <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="https://discord.gg/rBUBQ8RpH">Join Discord</a>
+          <a class="text-link" href="stock.html">In stock</a>
+        </div>
+        <p class="till-line">No cart here — live stock and buyer protection are on eBay.</p>
       </div>
-    </div></section>
-    <section class="section"><div class="container"><div class="callout"><h2>We keep it simple.</h2><p>Sealed product, clear condition, and a public eBay storefront you can check before you buy. No cart on this site — eBay is the till.</p><div class="actions"><a href="mailto:generational.pulls.au@gmail.com">Questions or trade / wholesale? Email us</a></div></div></div></section>
+    </section>
+
+    <section class="section preorder-band" aria-labelledby="preorders-heading">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="preorders-heading">Pre-order watches</h2>
+        </div>
+        <div id="preorder-empty" class="preorder-empty">
+          <p>Allocation windows land in Discord first. Join for restock &amp; drop alerts.</p>
+          <a class="button" href="https://discord.gg/rBUBQ8RpH">Join the Discord</a>
+        </div>
+        <div id="preorder-strip" class="preorder-strip" hidden></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="lanes-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2 id="lanes-heading">Explore what we sell</h2>
+            <p>Choose a lane — sealed product only.</p>
+          </div>
+        </div>
+        <div class="lane-grid">
+          <a class="lane" href="what-we-sell.html#english">
+            <span class="lane-kicker">Pokémon EN</span>
+            <span class="lane-title">Pokémon TCG — English sealed</span>
+            <span class="lane-note">Booster boxes, ETBs, UPCs and other sealed English product as allocated.</span>
+            <span class="lane-go">View this lane</span>
+          </a>
+          <a class="lane" href="what-we-sell.html#simplified-chinese">
+            <span class="lane-kicker">Pokémon SC</span>
+            <span class="lane-title">Pokémon TCG — Simplified Chinese</span>
+            <span class="lane-note">Sealed Simplified Chinese product when we have it in hand.</span>
+            <span class="lane-go">View this lane</span>
+          </a>
+          <a class="lane" href="what-we-sell.html#one-piece">
+            <span class="lane-kicker">One Piece</span>
+            <span class="lane-title">One Piece TCG — sealed</span>
+            <span class="lane-note">Sealed One Piece product for the AU reseller and collector market.</span>
+            <span class="lane-go">View this lane</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section inhand-band" id="in-hand" aria-labelledby="inhand-heading" hidden>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2 id="inhand-heading">In hand now</h2>
+            <p>Stock moves — check eBay before you buy.</p>
+          </div>
+          <div class="heading-actions">
+            <a class="view-all" href="stock.html">View all in stock</a>
+            <div class="carousel-nav">
+              <button type="button" id="inhand-prev" aria-label="Show previous products" aria-disabled="true"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M14.5 6 8.5 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <button type="button" id="inhand-next" aria-label="Show next products"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <ul class="carousel-track" id="inhand-track" tabindex="0" aria-label="In-hand products"></ul>
+      </div>
+    </section>
+    <noscript>
+      <section class="section inhand-band" aria-labelledby="inhand-noscript-heading">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <h2 id="inhand-noscript-heading">In hand now</h2>
+              <p>Stock moves — check eBay before you buy.</p>
+            </div>
+          </div>
+          <a class="view-all" href="stock.html">View all in stock</a>
+        </div>
+      </section>
+    </noscript>
+
+    <section class="trust-band" aria-labelledby="trust-heading">
+      <div class="container">
+        <h2 id="trust-heading" class="visually-hidden">Why buy from Generational Pulls</h2>
+        <ul class="badge-row">
+          <li>
+            <svg class="badge-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v8H3z"/><path d="M14 10h4l3 3v2h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg>
+            <div><strong>Dispatch from Perth WA</strong><span>AUS Post tracked, Australia-wide</span></div>
+          </li>
+          <li>
+            <svg class="badge-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 5 6v6c0 4.2 2.8 7.2 7 8.5 4.2-1.3 7-4.3 7-8.5V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><strong>Factory-sealed only</strong><span>Verified sealed product — packed like it’s ours</span></div>
+          </li>
+          <li>
+            <svg class="badge-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h7l4 4V20a1.5 1.5 0 0 1-1.5 1.5h-9.5A1.5 1.5 0 0 1 5.5 20V5A1.5 1.5 0 0 1 7 3.5z"/><path d="M14 3.5V8h4.5M8 12h8M8 16h5"/></svg>
+            <div><strong>ABN-verified sole trader</strong><span>ASIC business name Generational Pulls · ABN 38 301 484 193</span></div>
+          </li>
+          <li>
+            <svg class="badge-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5 12 4l8 5.5V20H4z"/><path d="M9 20v-6h6v6"/></svg>
+            <div><strong>Public eBay till</strong><span>Live listings + eBay buyer protection</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container"><div class="footer-grid"><ul class="footer-trust" aria-label="Why buy from Generational Pulls: Australia-wide shipping, sent from Perth WA"><li class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6l-8-3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><div><strong>100% authentic</strong><span>Verified sealed product only.</span></div></li><li class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9M7.5 5.2l9 4.5"/></svg><div><strong>Secure packaging</strong><span>Cards protected every step of the way.</span></div></li><li class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3.2V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><strong>AUS Post tracked</strong><span>Fast &amp; reliable, tracked delivery.</span></div></li><li class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6l-8-3z"/><path d="M8.5 11h7M8.5 14.5h4.5"/></svg><div><strong>ABN-verified seller</strong><span>Registered Australian sole trader.</span></div></li><li class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><div><strong>Australia-wide shipping</strong><span>Sent from Perth WA.</span></div></li></ul><div><div class="footer-brand">Generational Pulls</div><p class="footer-copy">Sole trader · ABN 38 301 484 193 · ASIC business name Generational Pulls · Perth / Brabham, Western Australia</p></div><div class="footer-links"><a href="https://ebay.io/m/q7AtVq">Shop on eBay ↗</a><a href="mailto:generational.pulls.au@gmail.com">Email us</a></div><p class="footer-copy">Trade or wholesale? <a href="mailto:generational.pulls.au@gmail.com">Email generational.pulls.au@gmail.com</a></p></div><div class="footer-bottom"><span>CHASING HITS. BUILDING LEGACY.</span><span>© 2026 Generational Pulls</span></div></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">Generational Pulls</div>
+      <p class="footer-copy">Sole trader · ABN 38 301 484 193 · ASIC business name Generational Pulls · Perth / Brabham, Western Australia</p>
+      <div class="footer-links">
+        <a href="https://ebay.io/m/q7AtVq">Shop on eBay <span aria-hidden="true">↗</span></a>
+        <a href="mailto:generational.pulls.au@gmail.com">Email us</a>
+        <a href="mailto:generational.pulls.au@gmail.com">Trade / wholesale</a>
+      </div>
+      <div class="footer-bottom">
+        <span>CHASING HITS. BUILDING LEGACY.</span>
+        <span>© 2026 Generational Pulls</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/home.js" defer></script>
 </body>
 </html>
